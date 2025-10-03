@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Simple Blog</title>
+  <!-- Bootstrap 5 CSS -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <style>
+    body {
+      background-color: #f5f6fa;
+    }
+    /* Navbar - soft teal */
+    .navbar {
+      background: #5bb0a8;
+    }
+    .navbar-brand {
+      font-weight: 700;
+    }
+
+    /* Cards */
+    .card img {
+      height: 200px;
+      object-fit: cover;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+    }
+    .card {
+      border: none;
+      background-color: #ffffff;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    /* Footer - soft gray */
+    footer {
+      background: #e0e0e0;
+      color: #444;
+    }
+    footer a {
+      color: #444;
+    }
+    footer a:hover {
+      color: #5bb0a8;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand text-white" href="#">MyBlog</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link text-white fw-semibold" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white fw-semibold" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link text-white fw-semibold" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Blog Section -->
+  <div class="container py-5">
+    <div class="text-center mb-5">
+      <h1 class="fw-bold" style="color:#444;">Welcome to My Blog</h1>
+      <p class="text-muted">Fresh articles, ideas, and tips to keep you inspired 💡</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Blog Card 1 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Tech">
+          <div class="card-body">
+            <h5 class="card-title fw-semibold">Top Tech Trends 2025</h5>
+            <p class="card-text text-muted">Explore emerging technologies that are transforming industries worldwide.</p>
+            <a href="#" class="btn btn-outline-success w-100">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Card 2 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Coding">
+          <div class="card-body">
+            <h5 class="card-title fw-semibold">Why Learn JavaScript?</h5>
+            <p class="card-text text-muted">Understand why JS is still the backbone of modern web development.</p>
+            <a href="#" class="btn btn-outline-primary w-100">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Card 3 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Design">
+          <div class="card-body">
+            <h5 class="card-title fw-semibold">Design Tips for Beginners</h5>
+            <p class="card-text text-muted">Start building aesthetic and user-friendly interfaces easily.</p>
+            <a href="#" class="btn btn-outline-secondary w-100">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 mt-5">
+    <div class="container">
+      <div class="mb-2">
+        <a href="#" class="fs-5 me-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="fs-5 me-3"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="fs-5 me-3"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="fs-5"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <p class="mb-0 small">© 2025 MyBlog. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+</body>
+</html>
